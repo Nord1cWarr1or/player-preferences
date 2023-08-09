@@ -407,7 +407,7 @@ ConnectionTest() {
     SQL_FreeHandle(g_hSqlTuple);
     g_hSqlTuple = Empty_Handle;
 
-    log_error(AMX_ERR_NATIVE, "[PP] Connection error[%d]: %s", iErrorCode, szError);
+    abort(AMX_ERR_NATIVE, "[PP] Connection error[%d]: %s", iErrorCode, szError);
 
     ExecuteForward(g_iForwards[Forward_Initialized], _, false);
 
