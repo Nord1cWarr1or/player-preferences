@@ -398,6 +398,7 @@ CreateForwards() {
 }
 
 ConnectionTest() {
+  SQL_SetAffinity("mysql");
   g_hSqlTuple = SQL_MakeDbTuple(g_szSqlHost, g_szSqlUser, g_szSqlPassword, g_szSqlDatabase);
 
   new szError[512], iErrorCode;
