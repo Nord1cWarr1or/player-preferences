@@ -32,7 +32,7 @@ forward pp_player_saved(const id);
 *
 * @return True if the player's preferences have been loaded, false otherwise.
 */
-native pp_is_loaded(const id);
+native bool: pp_is_loaded(const id);
 
 /**
 * Gets the value of a player's preference and copies it into the specified buffer.
